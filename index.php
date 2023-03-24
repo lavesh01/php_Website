@@ -22,39 +22,7 @@
 <body>
 
     <!-- NAVBAR  -->
-
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-body-tertiary">
-        <div class="container-fluid bg-dark ">
-            <a class="navbar-brand" href="#">TravelWeb</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <?php include 'menu.php'  ?>
 
     <!-- CAROUSEL  -->
 
@@ -152,7 +120,7 @@
 
 
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -164,7 +132,7 @@
 
 
                     <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        <img src="https://images.unsplash.com/photo-1440186347098-386b7459ad6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -179,9 +147,10 @@
         </div>
     </section>
 
+
     <!-- FORM  -->
 
-    <section class="my-5">
+    <section id="contact" class="my-5">
         <div class="py-5">
             <h2 class="text-center">Contact Us</h2>
         </div>
@@ -198,11 +167,11 @@
                 </div>
                 <div class="form-group">
                     <label>Phone:</label>
-                    <input type="phone" name="phone" class="form-control" autocomplete="off">
+                    <input type="phone" name="mobile" class="form-control" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label>Comments:</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea class="form-control" name="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>
